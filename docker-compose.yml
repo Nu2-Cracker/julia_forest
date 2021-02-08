@@ -1,0 +1,11 @@
+version: "2"
+services:
+  julia_forest:
+    image: julia_env_image
+    container_name: julia_env_container
+    build: .
+    volumes:
+      - ./learning_space:/works/learning_space
+    ports:
+      - "87:87"
+    tty: true
