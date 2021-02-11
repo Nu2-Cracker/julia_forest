@@ -6,6 +6,8 @@ services:
     build: .
     volumes:
       - ./learning_space:/works/learning_space
+      - ./learning_space_notebook:/works/learning_space_notebook
     ports:
-      - "87:87"
+      - "8004:8004"
     tty: true
+# jupyter notebook --port 8004 --ip=0.0.0.0 --allow-root

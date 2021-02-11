@@ -1,2 +1,4 @@
 .devcontainer
 .DS_Stoe
+.DS_Store
+.vscode/
