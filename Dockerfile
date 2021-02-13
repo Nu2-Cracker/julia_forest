@@ -22,7 +22,7 @@ RUN wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.3-linux-
 
 ENV PATH $PATH:/Julia/julia-1.5.3/bin
 
-copy ./learning_space/jupyter_add.jl /works/learning_space
+COPY ./learning_space/jupyter_add.jl /works/learning_space
 RUN julia /works/learning_space/jupyter_add.jl
 
 
