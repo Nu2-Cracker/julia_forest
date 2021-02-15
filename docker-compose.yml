@@ -10,5 +10,5 @@ services:
     ports:
       - "8004:8004"
     tty: true
-    command: jupyter notebook --port 8004 --ip=0.0.0.0 --allow-root --NotebookApp.token=''
+    command: jupyter nteract --port 8004 --ip=0.0.0.0 --allow-root --NotebookApp.token=''
 # jupyter notebook --port 8004 --ip=0.0.0.0 --allow-root

@@ -9,6 +9,9 @@ RUN apt install python3-pip python3-pandas python3-sklearn -y
 #jupyter
 RUN apt install jupyter-notebook -y
 
+# nteract
+RUN pip3 install nteract_on_jupyter
+
 #共有
 RUN mkdir /works && mkdir -p /works/learning_space
 RUN mkdir -p /works/learning_space_notebook
