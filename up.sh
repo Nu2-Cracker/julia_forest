@@ -6,3 +6,5 @@ docker-compose exec julia_forest bash
 #vscode setting
 # extension julia > setting > remote > executable path >> /Julia/julia-1.5.3/bin/julia
 # REPL >> inline
+
+# docker stop julia_env_container && docker rm julia_env_container

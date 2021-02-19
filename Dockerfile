@@ -13,7 +13,7 @@ RUN apt install jupyter-notebook -y
 RUN pip3 install nteract_on_jupyter
 
 #共有
-RUN mkdir /works && mkdir -p /works/learning_space
+RUN mkdir /works && mkdir -p /works/include
 RUN mkdir -p /works/learning_space_notebook
 
 #julia
@@ -25,8 +25,8 @@ RUN wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.3-linux-
 
 ENV PATH $PATH:/Julia/julia-1.5.3/bin
 
-COPY ./learning_space/jupyter_add.jl /works/learning_space
-RUN julia /works/learning_space/jupyter_add.jl
+COPY ./include/jupyter_add.jl /works/include
+RUN julia /works/include/jupyter_add.jl
 
 
 
